@@ -1,0 +1,17 @@
+doctype html
+html 
+    head 
+        title= title
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body    
+        h1 Ajouter un nouvel objet personnalisé
+        form(action="/update-cobj", class="form-wrapper" method="POST")
+            label(for="nom") Nom:
+            input(type="text", name="nom", required)
+            label(for="pv") Nombre de PV:
+            input(type="number", name="pv", required)
+            label(for="attaque") Attaque:
+            input(type="text", name="attaque", required)
+            button(type="submit") Ajouter
+        a(href="/") Return to the homepage
